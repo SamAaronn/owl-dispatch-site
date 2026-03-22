@@ -34,36 +34,43 @@ export default function PhoneShowcase() {
         {/* Ambient glow behind phone */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-[var(--accent)]/5 blur-[120px] pointer-events-none" />
 
-        <div className="relative flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-20 px-6 max-w-6xl mx-auto">
-          {/* Left side — context labels */}
-          <div className="lg:w-[300px] text-center lg:text-right">
-            <motion.div style={{ opacity: label1Opacity }} className="absolute lg:relative inset-0 lg:inset-auto flex flex-col justify-center">
-              <p className="text-sm font-semibold text-[var(--accent)] uppercase tracking-widest mb-2">
+        <div className="relative flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-20 px-6 max-w-6xl mx-auto">
+          {/* Context labels — stacked above phone on mobile, left side on desktop */}
+          <div className="relative lg:w-[300px] text-center lg:text-right h-[80px] lg:h-auto w-full max-w-[300px]">
+            <motion.div
+              style={{ opacity: label1Opacity }}
+              className="absolute inset-0 flex flex-col justify-center text-center lg:text-right"
+            >
+              <p className="text-sm font-semibold text-[var(--accent)] uppercase tracking-widest mb-1 lg:mb-2">
                 2:14 AM
               </p>
-              <h3 className="text-2xl md:text-3xl font-bold mb-3">
+              <h3 className="text-xl lg:text-3xl font-bold mb-1 lg:mb-3">
                 The Call Comes In
               </h3>
-              <p className="text-[var(--text-secondary)] text-sm leading-relaxed">
+              <p className="text-[var(--text-secondary)] text-xs lg:text-sm leading-relaxed hidden sm:block">
                 Law enforcement calls your dispatch line. Owl Dispatch answers instantly.
               </p>
             </motion.div>
 
-            <motion.div style={{ opacity: label2Opacity }} className="absolute lg:relative inset-0 lg:inset-auto flex flex-col justify-center">
-              <p className="text-sm font-semibold text-[var(--accent)] uppercase tracking-widest mb-2">
+            <motion.div
+              style={{ opacity: label2Opacity }}
+              className="absolute inset-0 flex flex-col justify-center text-center lg:text-right"
+            >
+              <p className="text-sm font-semibold text-[var(--accent)] uppercase tracking-widest mb-1 lg:mb-2">
                 2:15 AM
               </p>
-              <h3 className="text-2xl md:text-3xl font-bold mb-3">
+              <h3 className="text-xl lg:text-3xl font-bold mb-1 lg:mb-3">
                 Driver Dispatched
               </h3>
-              <p className="text-[var(--text-secondary)] text-sm leading-relaxed">
+              <p className="text-[var(--text-secondary)] text-xs lg:text-sm leading-relaxed hidden sm:block">
                 Your on-call driver gets the details via SMS. Confirms with one tap. Done.
               </p>
             </motion.div>
           </div>
 
-          {/* Phone with tilt effect */}
+          {/* Phone with tilt effect — scale down on small screens */}
           <motion.div
+            className="scale-[0.85] sm:scale-100 origin-top"
             style={{
               rotateX,
               rotateY,
