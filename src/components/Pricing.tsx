@@ -16,7 +16,7 @@ export default function Pricing() {
           Never calls in sick.
         </p>
 
-        <div className="bg-[var(--bg-card)] border border-[var(--accent)]/30 rounded-2xl p-8 md:p-12 max-w-md mx-auto">
+        <div className="glass-card border-[var(--accent)]/20 rounded-2xl p-8 md:p-12 max-w-md mx-auto">
           <div className="text-sm text-[var(--accent)] font-semibold uppercase tracking-wider mb-4">
             Night Shift Plan
           </div>

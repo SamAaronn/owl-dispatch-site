@@ -22,7 +22,7 @@ export default function Problem() {
   return (
     <section className="py-20 px-6">
       <div className="max-w-4xl mx-auto">
-        <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-2xl p-8 md:p-12">
+        <div className="glass-card rounded-2xl p-8 md:p-12">
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
             The Night Shift Problem
           </h2>

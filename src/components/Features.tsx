@@ -58,7 +58,7 @@ export default function Features() {
           {features.map((f) => (
             <div
               key={f.title}
-              className="bg-[var(--bg-card)] border border-[var(--border)] border-t-2 border-t-[var(--accent)]/30 rounded-xl p-6 hover:border-[var(--accent)]/30 hover:bg-gradient-to-b hover:from-[var(--accent)]/5 hover:to-transparent transition-all duration-200"
+              className="glass-card rounded-xl p-6 border-t-2 border-t-[var(--accent)]/30 transition-all duration-300"
             >
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-[var(--accent)]/10 text-[var(--accent)] mb-4">
                 <f.icon className="w-6 h-6" />

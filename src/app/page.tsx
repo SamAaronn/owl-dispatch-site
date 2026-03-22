@@ -7,10 +7,12 @@ import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import GrainOverlay from "@/components/GrainOverlay";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <GrainOverlay />
       <Navbar />
       <Hero />
       <Problem />
