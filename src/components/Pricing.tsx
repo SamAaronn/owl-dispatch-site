@@ -7,15 +7,12 @@ export default function Pricing() {
         </h2>
 
         <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-2xl p-8 md:p-12 max-w-md mx-auto">
-          <div className="text-sm text-[var(--text-secondary)] font-medium mb-6">
-            10 PM &ndash; 7 AM coverage
-          </div>
           <div className="flex items-baseline justify-center gap-1 mb-2">
             <span className="text-5xl font-extrabold">$1,000</span>
             <span className="text-[var(--text-secondary)]">/month</span>
           </div>
           <div className="text-[var(--text-secondary)] text-sm mb-8">
-            + $300 one-time setup
+            + $500 one-time setup
           </div>
 
           <ul className="text-left space-y-3 mb-10">
