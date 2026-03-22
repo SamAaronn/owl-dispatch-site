@@ -47,8 +47,8 @@ export default function PhoneMockup({ callOpacity, smsOpacity }: PhoneMockupProp
               </svg>
             </div>
             <p className="text-white/50 text-xs tracking-wider uppercase">Incoming Call</p>
-            <h3 className="text-white text-xl font-semibold">VSP Dispatch</h3>
-            <p className="text-white/40 text-sm">Virginia State Police</p>
+            <h3 className="text-white text-xl font-semibold">Sheriff Dispatch</h3>
+            <p className="text-white/40 text-sm">Incoming rotation call</p>
           </div>
 
           <div className="relative z-10 flex items-center gap-16 mb-4">
