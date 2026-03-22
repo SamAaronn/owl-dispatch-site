@@ -18,11 +18,31 @@ export const metadata: Metadata = {
     "overnight dispatch",
     "tow truck answering service",
   ],
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+  },
   openGraph: {
     title: "Owl Dispatch | AI Night-Shift Dispatch for Towing Companies",
     description:
       "AI-powered overnight dispatch that answers calls, collects job details, and dispatches drivers via SMS.",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Owl Dispatch — AI Night-Shift Dispatch for Towing Companies",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Owl Dispatch | AI Night-Shift Dispatch for Towing Companies",
+    description:
+      "AI-powered overnight dispatch that answers calls, collects job details, and dispatches drivers via SMS.",
+    images: ["/og-image.png"],
   },
 };
 
