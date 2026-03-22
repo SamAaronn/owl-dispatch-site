@@ -52,7 +52,6 @@ export default function PhoneShowcase() {
       <section ref={sectionRef} className="relative h-[180vh] hidden lg:block">
         <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg-primary)] via-[#0a0f1a] to-[var(--bg-primary)] pointer-events-none" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-[var(--accent)]/5 blur-[120px] pointer-events-none" />
 
           <div className="relative flex items-center justify-center gap-20 px-6 max-w-6xl mx-auto">
             <div className="relative w-[300px] text-right">

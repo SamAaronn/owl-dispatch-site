@@ -8,7 +8,7 @@ export default function HowItWorks() {
     {
       num: "2",
       title: "AI gets the details.",
-      desc: "Location, vehicle, requesting agency, special instructions. Natural conversation.",
+      desc: "Location, vehicle, requesting agency, special instructions. Sounds like a real dispatcher.",
     },
     {
       num: "3",

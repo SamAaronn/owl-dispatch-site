@@ -43,12 +43,12 @@ export default function PhoneMockup({ callOpacity, smsOpacity }: PhoneMockupProp
           <div className="relative z-10 flex flex-col items-center gap-3 mt-8">
             <div className="w-20 h-20 rounded-full bg-[#2a3a5a] flex items-center justify-center mb-2">
               <svg className="w-10 h-10 text-[#6a8abd]" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
               </svg>
             </div>
             <p className="text-white/50 text-xs tracking-wider uppercase">Incoming Call</p>
-            <h3 className="text-white text-xl font-semibold">County Sheriff</h3>
-            <p className="text-white/40 text-sm">Dispatch Line</p>
+            <h3 className="text-white text-xl font-semibold">VSP Dispatch</h3>
+            <p className="text-white/40 text-sm">Virginia State Police</p>
           </div>
 
           <div className="relative z-10 flex items-center gap-16 mb-4">

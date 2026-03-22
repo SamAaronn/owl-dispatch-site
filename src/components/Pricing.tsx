@@ -7,8 +7,8 @@ export default function Pricing() {
         </h2>
 
         <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-2xl p-8 md:p-12 max-w-md mx-auto">
-          <div className="text-sm text-[var(--accent)] font-medium uppercase tracking-wide mb-6">
-            Night Shift Plan
+          <div className="text-sm text-[var(--text-secondary)] font-medium mb-6">
+            10 PM &ndash; 7 AM coverage
           </div>
           <div className="flex items-baseline justify-center gap-1 mb-2">
             <span className="text-5xl font-extrabold">$1,000</span>

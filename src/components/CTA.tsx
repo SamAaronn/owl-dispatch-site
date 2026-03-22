@@ -6,8 +6,7 @@ export default function CTA() {
           Call us.
         </h2>
         <p className="text-[var(--text-secondary)] mb-10 max-w-lg mx-auto">
-          We&apos;re currently onboarding founding customers in Virginia.
-          Reach out anytime.
+          Taking on new companies in Virginia now.
         </p>
 
         <div className="flex flex-col items-center gap-6">
