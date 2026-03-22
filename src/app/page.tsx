@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import PhoneShowcase from "@/components/PhoneShowcase";
 import Problem from "@/components/Problem";
 import HowItWorks from "@/components/HowItWorks";
 import Features from "@/components/Features";
@@ -15,6 +16,7 @@ export default function Home() {
       <GrainOverlay />
       <Navbar />
       <Hero />
+      <PhoneShowcase />
       <Problem />
       <HowItWorks />
       <Features />
