@@ -12,7 +12,7 @@ export default function Problem() {
               The call goes to voicemail. They move to the next company on the rotation list.
             </p>
             <p>
-              A rotation tow averages $250&ndash;400. Miss two calls a week
+              A rotation tow with storage averages $250&ndash;400. Miss two calls a week
               and that&apos;s $2,000&ndash;3,000 a month walking out the door.
             </p>
             <p className="text-[var(--text-primary)] font-medium">
