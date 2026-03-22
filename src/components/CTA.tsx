@@ -1,6 +1,6 @@
 export default function CTA() {
   return (
-    <section id="contact" className="py-20 px-6">
+    <section id="contact" className="py-28 px-6">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Stop Losing Overnight Calls
@@ -46,15 +46,22 @@ export default function CTA() {
             />
             <button
               type="submit"
-              className="w-full bg-[var(--accent)] text-[var(--bg-primary)] py-3.5 rounded-lg font-semibold text-lg hover:bg-[var(--accent-hover)] transition-colors"
+              className="w-full bg-[var(--accent)] text-[var(--bg-primary)] py-3.5 rounded-lg font-semibold text-lg hover:bg-[var(--accent-hover)] transition-colors shadow-[0_0_20px_rgba(212,168,67,0.2)]"
             >
-              Request a Demo
+              Schedule a Demo
             </button>
           </form>
           <p className="mt-4 text-[var(--text-secondary)] text-xs">
             We&apos;ll reach out within 24 hours to walk you through a live demo.
           </p>
         </div>
+
+        <p className="mt-8 text-[var(--text-secondary)] text-sm">
+          Prefer to talk now?{" "}
+          <a href="tel:+15406450805" className="text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors font-medium">
+            Call (540) 645-0805
+          </a>
+        </p>
       </div>
     </section>
   );

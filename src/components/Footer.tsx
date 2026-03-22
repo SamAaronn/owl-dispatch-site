@@ -1,14 +1,19 @@
-import { OwlLogo } from "./Icons";
-
 export default function Footer() {
   return (
     <footer className="border-t border-[var(--border)] py-10 px-6">
-      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-        <div className="flex items-center gap-2.5">
-          <OwlLogo className="w-6 h-6 text-[var(--accent)]" />
-          <span className="text-lg font-bold text-[var(--accent)]">
-            Owl Dispatch
-          </span>
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <div className="flex items-center gap-1 mb-1">
+            <span className="text-lg font-extrabold tracking-tight text-[var(--accent)]">
+              Owl
+            </span>
+            <span className="text-lg font-extrabold tracking-tight text-[var(--text-primary)]">
+              Dispatch
+            </span>
+          </div>
+          <p className="text-[var(--text-secondary)] text-xs">
+            Virginia, USA
+          </p>
         </div>
 
         <div className="flex gap-6 text-[var(--text-secondary)] text-sm">
@@ -21,8 +26,8 @@ export default function Footer() {
           <a href="#pricing" className="hover:text-[var(--text-primary)] transition-colors">
             Pricing
           </a>
-          <a href="#contact" className="hover:text-[var(--text-primary)] transition-colors">
-            Contact
+          <a href="tel:+15406450805" className="hover:text-[var(--text-primary)] transition-colors">
+            (540) 645-0805
           </a>
         </div>
 

@@ -33,8 +33,14 @@ export default function FAQ() {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="py-20 px-6 bg-[var(--bg-secondary)]">
+    <section id="faq" className="py-20 px-6 bg-[var(--bg-secondary)] bg-dots">
+      {/* Gradient divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-[var(--accent)]/20 to-transparent mb-20" />
+
       <div className="max-w-3xl mx-auto">
+        <p className="text-sm font-semibold text-[var(--accent)] uppercase tracking-widest mb-3 text-center">
+          Questions
+        </p>
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Frequently Asked Questions
         </h2>
@@ -47,18 +53,28 @@ export default function FAQ() {
             >
               <button
                 onClick={() => setOpenIdx(openIdx === i ? null : i)}
+                aria-expanded={openIdx === i}
                 className="w-full text-left px-6 py-4 flex items-center justify-between gap-4 hover:bg-[var(--bg-card)] transition-colors"
               >
                 <span className="font-medium">{faq.q}</span>
-                <span className="text-[var(--accent)] text-xl shrink-0">
-                  {openIdx === i ? "−" : "+"}
+                <span className="text-[var(--accent)] text-xl shrink-0 transition-transform duration-200"
+                  style={{ transform: openIdx === i ? "rotate(45deg)" : "rotate(0deg)" }}
+                >
+                  +
                 </span>
               </button>
-              {openIdx === i && (
-                <div className="px-6 pb-4 text-[var(--text-secondary)] text-sm leading-relaxed">
-                  {faq.a}
+              <div
+                className="grid transition-all duration-200 ease-in-out"
+                style={{
+                  gridTemplateRows: openIdx === i ? "1fr" : "0fr",
+                }}
+              >
+                <div className="overflow-hidden">
+                  <div className="px-6 pb-4 text-[var(--text-secondary)] text-sm leading-relaxed">
+                    {faq.a}
+                  </div>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>

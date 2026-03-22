@@ -42,9 +42,12 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="py-20 px-6 bg-[var(--bg-secondary)]">
+    <section id="features" className="py-20 px-6 bg-[var(--bg-secondary)] bg-dots">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+        <p className="text-sm font-semibold text-[var(--accent)] uppercase tracking-widest mb-3 text-center">
+          Capabilities
+        </p>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">
           Built for Towing Companies
         </h2>
         <p className="text-[var(--text-secondary)] text-center mb-16 max-w-xl mx-auto">
@@ -55,10 +58,10 @@ export default function Features() {
           {features.map((f) => (
             <div
               key={f.title}
-              className="bg-[var(--bg-card)] border border-[var(--border)] rounded-xl p-6 hover:border-[var(--accent)]/30 transition-colors"
+              className="bg-[var(--bg-card)] border border-[var(--border)] border-t-2 border-t-[var(--accent)]/30 rounded-xl p-6 hover:border-[var(--accent)]/30 hover:bg-gradient-to-b hover:from-[var(--accent)]/5 hover:to-transparent transition-all duration-200"
             >
-              <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-[var(--accent)]/10 text-[var(--accent)] mb-4">
-                <f.icon className="w-5 h-5" />
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-[var(--accent)]/10 text-[var(--accent)] mb-4">
+                <f.icon className="w-6 h-6" />
               </div>
               <h3 className="font-semibold text-lg mb-2">{f.title}</h3>
               <p className="text-[var(--text-secondary)] text-sm leading-relaxed">

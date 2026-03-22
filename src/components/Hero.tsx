@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 px-6 overflow-hidden">
+    <section className="relative pt-32 pb-28 px-6 overflow-hidden">
       {/* Gradient backdrop */}
       <div className="absolute inset-0 bg-gradient-to-b from-[var(--accent)]/5 via-transparent to-transparent pointer-events-none" />
       <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-[var(--accent)]/5 blur-[120px] pointer-events-none" />
@@ -27,7 +27,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#contact"
-            className="bg-[var(--accent)] text-[var(--bg-primary)] px-8 py-3.5 rounded-lg font-semibold text-lg hover:bg-[var(--accent-hover)] transition-colors"
+            className="bg-[var(--accent)] text-[var(--bg-primary)] px-8 py-3.5 rounded-lg font-semibold text-lg hover:bg-[var(--accent-hover)] transition-colors shadow-[0_0_30px_rgba(212,168,67,0.25)]"
           >
             Schedule a Demo
           </a>
