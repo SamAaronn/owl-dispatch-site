@@ -1,5 +1,3 @@
-import FadeIn, { StaggerContainer, StaggerItem } from "./FadeIn";
-
 export default function HowItWorks() {
   const steps = [
     {
@@ -21,32 +19,26 @@ export default function HowItWorks() {
 
   return (
     <section id="how-it-works" className="py-20 px-6 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0d1a2d]/40 via-transparent to-transparent pointer-events-none" />
-
       <div className="relative max-w-3xl mx-auto">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-            How it works
-          </h2>
-        </FadeIn>
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+          How it works
+        </h2>
 
-        <StaggerContainer className="space-y-8">
+        <div className="space-y-8">
           {steps.map((step) => (
-            <StaggerItem key={step.num}>
-              <div className="flex gap-5 items-start">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[var(--accent)]/15 text-[var(--accent)] flex items-center justify-center text-sm font-bold">
-                  {step.num}
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-1">{step.title}</h3>
-                  <p className="text-[var(--text-secondary)] leading-relaxed">
-                    {step.desc}
-                  </p>
-                </div>
+            <div key={step.num} className="flex gap-5 items-start">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[var(--accent)]/15 text-[var(--accent)] flex items-center justify-center text-sm font-bold">
+                {step.num}
               </div>
-            </StaggerItem>
+              <div>
+                <h3 className="text-lg font-semibold mb-1">{step.title}</h3>
+                <p className="text-[var(--text-secondary)] leading-relaxed">
+                  {step.desc}
+                </p>
+              </div>
+            </div>
           ))}
-        </StaggerContainer>
+        </div>
       </div>
     </section>
   );

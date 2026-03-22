@@ -17,11 +17,11 @@ const faqs = [
   },
   {
     q: "Is this compliant with rotation requirements?",
-    a: "Yes. We configure it for your county's specific rules. Every call is recorded and transcribed for your records.",
+    a: "Yes. We configure the system for your county's specific rotation rules — call order, response windows, documentation requirements. Every call is recorded and transcribed so you have a complete audit trail for compliance reviews.",
   },
   {
     q: "Can I listen back to calls?",
-    a: "Every call. Full audio and transcript. Plus a morning summary so you don't have to dig through anything.",
+    a: "Every call. Full audio and transcript.",
   },
   {
     q: "What about daytime calls?",
@@ -34,7 +34,7 @@ export default function FAQ() {
 
   return (
     <section id="faq" className="py-20 px-6 bg-[var(--bg-secondary)]">
-      <div className="h-px bg-gradient-to-r from-transparent via-[var(--accent)]/20 to-transparent mb-16" />
+      <div className="h-px bg-[var(--border)] mb-16 max-w-3xl mx-auto" />
 
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">

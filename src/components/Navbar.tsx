@@ -58,7 +58,7 @@ export default function Navbar() {
           </a>
           <a
             href="#contact"
-            className="bg-[var(--accent)] text-[var(--bg-primary)] px-5 py-2 rounded-lg font-semibold text-sm hover:bg-[var(--accent-hover)] transition-colors shadow-[0_0_20px_rgba(212,168,67,0.15)]"
+            className="bg-[var(--accent)] text-[var(--bg-primary)] px-5 py-2 rounded-lg font-semibold text-sm hover:bg-[var(--accent-hover)] transition-colors "
           >
             Get in Touch
           </a>

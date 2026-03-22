@@ -1,19 +1,13 @@
-import FadeIn from "./FadeIn";
-
 export default function Pricing() {
   return (
     <section id="pricing" className="py-28 px-6 relative overflow-hidden">
-      {/* Ambient glow */}
-      <div className="absolute -top-40 left-1/4 w-[400px] h-[400px] rounded-full bg-[var(--accent)]/3 blur-[100px] pointer-events-none" />
-      <div className="absolute bottom-0 right-1/3 w-[300px] h-[300px] rounded-full bg-[#2d1b4e]/15 blur-[100px] pointer-events-none" />
-
-      <FadeIn className="relative max-w-3xl mx-auto text-center">
+      <div className="relative max-w-3xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-12">
           Pricing
         </h2>
 
-        <div className="glass-card border-[var(--accent)]/20 rounded-2xl p-8 md:p-12 max-w-md mx-auto">
-          <div className="text-sm text-[var(--accent)] font-semibold uppercase tracking-wider mb-6">
+        <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-2xl p-8 md:p-12 max-w-md mx-auto">
+          <div className="text-sm text-[var(--accent)] font-medium uppercase tracking-wide mb-6">
             Night Shift Plan
           </div>
           <div className="flex items-baseline justify-center gap-1 mb-2">
@@ -54,12 +48,12 @@ export default function Pricing() {
 
           <a
             href="#contact"
-            className="block w-full bg-[var(--accent)] text-[var(--bg-primary)] py-3.5 rounded-lg font-semibold text-lg hover:bg-[var(--accent-hover)] transition-colors shadow-[0_0_20px_rgba(212,168,67,0.2)]"
+            className="block w-full bg-[var(--accent)] text-[var(--bg-primary)] py-3.5 rounded-lg font-semibold text-lg hover:bg-[var(--accent-hover)] transition-colors"
           >
             Get in Touch
           </a>
         </div>
-      </FadeIn>
+      </div>
     </section>
   );
 }

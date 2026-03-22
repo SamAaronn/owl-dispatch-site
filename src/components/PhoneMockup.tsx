@@ -15,7 +15,7 @@ export default function PhoneMockup({ callOpacity, smsOpacity }: PhoneMockupProp
 
       {/* Status bar */}
       <div className="absolute top-[8px] left-[40px] right-[40px] flex justify-between items-center z-10 px-2">
-        <span className="text-[10px] text-white/60 font-medium">9:41</span>
+        <span className="text-[10px] text-white/60 font-medium">2:14</span>
         <div className="flex items-center gap-1">
           <div className="w-[14px] h-[10px] flex items-end gap-[1px]">
             <div className="w-[2px] h-[4px] bg-white/60 rounded-sm" />

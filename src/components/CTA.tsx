@@ -1,15 +1,9 @@
 export default function CTA() {
   return (
     <section id="contact" className="py-28 px-6 relative overflow-hidden">
-      {/* Color accent */}
-      <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full bg-[#1a3a5c]/20 blur-[100px] pointer-events-none" />
-
       <div className="relative max-w-3xl mx-auto text-center">
-        <p className="text-sm font-semibold text-[var(--accent)] uppercase tracking-widest mb-3">
-          Contact
-        </p>
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Interested?
+          Call us.
         </h2>
         <p className="text-[var(--text-secondary)] mb-10 max-w-lg mx-auto">
           We&apos;re currently onboarding founding customers in Virginia.
