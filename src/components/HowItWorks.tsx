@@ -20,11 +20,12 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section id="how-it-works" className="py-28 px-6">
-      {/* Gradient divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-[var(--accent)]/20 to-transparent mb-28" />
+    <section id="how-it-works" className="py-28 px-6 relative overflow-hidden">
+      {/* Color wash — deep blue/teal to break up the darkness */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0d1a2d]/60 via-transparent to-[#1a2a3d]/40 pointer-events-none" />
+      <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] rounded-full bg-[#1a3a5c]/15 blur-[120px] pointer-events-none" />
 
-      <div className="max-w-5xl mx-auto">
+      <div className="relative max-w-5xl mx-auto">
         <FadeIn>
           <p className="text-sm font-semibold text-[var(--accent)] uppercase tracking-widest mb-3 text-center">
             Process

@@ -5,12 +5,15 @@ export default function CTA() {
       <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full bg-[#1a3a5c]/20 blur-[100px] pointer-events-none" />
 
       <div className="relative max-w-3xl mx-auto text-center">
+        <p className="text-sm font-semibold text-[var(--accent)] uppercase tracking-widest mb-3">
+          Contact
+        </p>
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Let&apos;s Talk
+          Interested?
         </h2>
         <p className="text-[var(--text-secondary)] mb-10 max-w-lg mx-auto">
-          Curious how AI dispatch could work for your operation?
-          Drop us a line or give us a call.
+          We&apos;re currently onboarding founding customers.
+          Drop us a line and we&apos;ll tell you more.
         </p>
 
         <div className="glass-card rounded-2xl p-8 max-w-md mx-auto">

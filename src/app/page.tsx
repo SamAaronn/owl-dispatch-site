@@ -16,9 +16,9 @@ export default function Home() {
       <GrainOverlay />
       <Navbar />
       <Hero />
-      <PhoneShowcase />
       <Problem />
       <HowItWorks />
+      <PhoneShowcase />
       <Features />
       <Pricing />
       <FAQ />

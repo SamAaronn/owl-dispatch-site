@@ -26,7 +26,7 @@ export default function PhoneShowcase() {
   const label2Opacity = useTransform(scrollYProgress, [0.45, 0.55, 0.8, 0.9], [0, 1, 1, 0]);
 
   return (
-    <section ref={sectionRef} className="relative h-[250vh]">
+    <section ref={sectionRef} className="relative h-[180vh]">
       <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
         {/* Background gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg-primary)] via-[#0a0f1a] to-[var(--bg-primary)] pointer-events-none" />

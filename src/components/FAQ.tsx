@@ -33,7 +33,8 @@ export default function FAQ() {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="py-20 px-6 bg-[var(--bg-secondary)] bg-dots">
+    <section id="faq" className="py-20 px-6 bg-[var(--bg-secondary)] bg-dots relative overflow-hidden">
+      <div className="absolute top-0 right-1/3 w-[300px] h-[300px] rounded-full bg-[#2d1b4e]/15 blur-[100px] pointer-events-none" />
       {/* Gradient divider */}
       <div className="h-px bg-gradient-to-r from-transparent via-[var(--accent)]/20 to-transparent mb-20" />
 

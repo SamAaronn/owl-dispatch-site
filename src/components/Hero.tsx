@@ -53,16 +53,16 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <a
-            href="tel:+15406450805"
+            href="#how-it-works"
             className="bg-[var(--accent)] text-[var(--bg-primary)] px-8 py-3.5 rounded-lg font-semibold text-lg hover:bg-[var(--accent-hover)] transition-all duration-200 shadow-[0_0_30px_rgba(212,168,67,0.25)] hover:translate-y-[-1px]"
           >
-            Call (540) 645-0805
+            See How It Works
           </a>
           <a
-            href="#how-it-works"
+            href="#contact"
             className="border border-[var(--border)] text-[var(--text-primary)] px-8 py-3.5 rounded-lg font-semibold text-lg hover:border-[var(--accent)]/50 transition-colors"
           >
-            See How It Works
+            Get in Touch
           </a>
         </motion.div>
       </div>

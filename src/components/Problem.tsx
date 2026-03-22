@@ -21,8 +21,11 @@ export default function Problem() {
   ];
 
   return (
-    <section className="py-20 px-6">
-      <div className="max-w-4xl mx-auto">
+    <section className="py-20 px-6 relative overflow-hidden">
+      {/* Color wash */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1a2040]/40 to-transparent pointer-events-none" />
+      <div className="absolute top-1/2 right-0 w-[350px] h-[350px] rounded-full bg-[#2d1b4e]/20 blur-[100px] pointer-events-none" />
+      <div className="relative max-w-4xl mx-auto">
         <FadeIn>
           <div className="glass-card rounded-2xl p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
@@ -46,6 +49,9 @@ export default function Problem() {
           </div>
         </FadeIn>
       </div>
+
+      {/* Gradient divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-[var(--accent)]/20 to-transparent mt-20" />
     </section>
   );
 }
