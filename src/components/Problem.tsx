@@ -1,57 +1,34 @@
-import { PhoneIcon, UserSleepIcon, CurrencyDollarIcon } from "./Icons";
-import FadeIn, { StaggerContainer, StaggerItem } from "./FadeIn";
+import FadeIn from "./FadeIn";
 
 export default function Problem() {
-  const problems = [
-    {
-      icon: PhoneIcon,
-      title: "Calls Come In at 2 AM",
-      desc: "Sheriff's departments and law enforcement don't wait until morning. Rotation calls happen overnight.",
-    },
-    {
-      icon: UserSleepIcon,
-      title: "Your Drivers Are Sleeping",
-      desc: "Missed calls mean missed revenue and dropped rotation spots. Every unanswered call is money walking away.",
-    },
-    {
-      icon: CurrencyDollarIcon,
-      title: "Call Centers Are Expensive",
-      desc: "$1,200+/month for a human answering service that still gets details wrong and can't dispatch your drivers.",
-    },
-  ];
-
   return (
-    <section className="py-20 px-6 relative overflow-hidden">
-      {/* Color wash */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1a2040]/40 to-transparent pointer-events-none" />
-      <div className="absolute top-1/2 right-0 w-[350px] h-[350px] rounded-full bg-[#2d1b4e]/20 blur-[100px] pointer-events-none" />
-      <div className="relative max-w-4xl mx-auto">
+    <section className="py-16 px-6 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1a2040]/30 to-transparent pointer-events-none" />
+
+      <div className="relative max-w-3xl mx-auto">
         <FadeIn>
           <div className="glass-card rounded-2xl p-8 md:p-12">
-            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
-              The Night Shift Problem
+            <h2 className="text-2xl md:text-3xl font-bold mb-6">
+              2 AM. Your phone rings.
             </h2>
-            <StaggerContainer className="grid md:grid-cols-3 gap-8">
-              {problems.map((p) => (
-                <StaggerItem key={p.title}>
-                  <div className="text-center">
-                    <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[var(--accent)]/10 text-[var(--accent)] mb-4">
-                      <p.icon className="w-6 h-6" />
-                    </div>
-                    <h3 className="font-semibold mb-2 text-lg">{p.title}</h3>
-                    <p className="text-[var(--text-secondary)] text-sm leading-relaxed">
-                      {p.desc}
-                    </p>
-                  </div>
-                </StaggerItem>
-              ))}
-            </StaggerContainer>
+            <div className="space-y-4 text-[var(--text-secondary)] leading-relaxed text-left">
+              <p>
+                Sheriff&apos;s department needs a tow off the highway. Your on-call driver is asleep.
+                The call goes to voicemail. They move to the next company on the rotation list.
+              </p>
+              <p>
+                A rotation tow averages $250&ndash;400. Miss two calls a week
+                and that&apos;s $2,000&ndash;3,000 a month walking out the door.
+              </p>
+              <p className="text-[var(--text-primary)] font-medium">
+                That&apos;s the gap we fill.
+              </p>
+            </div>
           </div>
         </FadeIn>
       </div>
 
-      {/* Gradient divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-[var(--accent)]/20 to-transparent mt-20" />
+      <div className="h-px bg-gradient-to-r from-transparent via-[var(--accent)]/20 to-transparent mt-16" />
     </section>
   );
 }

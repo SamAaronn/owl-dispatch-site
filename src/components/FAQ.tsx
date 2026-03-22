@@ -5,27 +5,27 @@ import { useState } from "react";
 const faqs = [
   {
     q: "What happens if the AI can't handle a call?",
-    a: "The system immediately escalates to a human on your emergency contact list. It also logs the call so you can review exactly what happened. In practice, this is rare — the AI handles standard dispatch calls with high accuracy.",
+    a: "It calls your emergency contact immediately. Hasn't happened yet, but the fallback is always a real person.",
   },
   {
     q: "Do I need to change my phone number?",
-    a: "No. We set up call forwarding from your existing number during your after-hours window. Callers dial the same number they always have. During the day, calls go to your team as usual.",
+    a: "No. We set up call forwarding from your existing number during your after-hours window. Callers dial the same number they always have.",
   },
   {
     q: "How do my drivers get notified?",
-    a: "Via SMS with full job details — location, vehicle description, requesting agency, and any special instructions. Drivers confirm by replying. If they don't respond within your set window, the system moves to the next driver on your list.",
+    a: "Text message with the full job details — location, vehicle, requesting agency, special instructions. They reply to confirm. If they don't respond, we move to the next driver on your list.",
   },
   {
-    q: "Is this compliant with local rotation requirements?",
-    a: "Yes. We configure the AI to understand your county's specific rotation rules and law enforcement dispatch protocols. Every call is recorded and transcribed for your compliance records.",
+    q: "Is this compliant with rotation requirements?",
+    a: "Yes. We configure it for your county's specific rules. Every call is recorded and transcribed for your records.",
   },
   {
-    q: "Can I see transcripts of calls?",
-    a: "Absolutely. Every call gets a full transcript and audio recording. You get a morning summary report, plus real-time access to a dashboard with all call history.",
+    q: "Can I listen back to calls?",
+    a: "Every call. Full audio and transcript. Plus a morning summary so you don't have to dig through anything.",
   },
   {
-    q: "What if I want to handle calls during the day too?",
-    a: "We're focused on the night shift right now — that's where the pain is sharpest. Day-shift coverage is on the roadmap. But honestly, most companies we talk to are fine handling daytime calls themselves.",
+    q: "What about daytime calls?",
+    a: "We're focused on nights right now — that's where the pain is. Most companies we talk to handle daytime fine on their own.",
   },
 ];
 
@@ -33,17 +33,12 @@ export default function FAQ() {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="py-20 px-6 bg-[var(--bg-secondary)] bg-dots relative overflow-hidden">
-      <div className="absolute top-0 right-1/3 w-[300px] h-[300px] rounded-full bg-[#2d1b4e]/15 blur-[100px] pointer-events-none" />
-      {/* Gradient divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-[var(--accent)]/20 to-transparent mb-20" />
+    <section id="faq" className="py-20 px-6 bg-[var(--bg-secondary)]">
+      <div className="h-px bg-gradient-to-r from-transparent via-[var(--accent)]/20 to-transparent mb-16" />
 
       <div className="max-w-3xl mx-auto">
-        <p className="text-sm font-semibold text-[var(--accent)] uppercase tracking-widest mb-3 text-center">
-          Questions
-        </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Frequently Asked Questions
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
+          FAQ
         </h2>
 
         <div className="space-y-3">
@@ -58,11 +53,16 @@ export default function FAQ() {
                 className="w-full text-left px-6 py-4 flex items-center justify-between gap-4 hover:bg-[var(--bg-card)] transition-colors"
               >
                 <span className="font-medium">{faq.q}</span>
-                <span className="text-[var(--accent)] text-xl shrink-0 transition-transform duration-200"
-                  style={{ transform: openIdx === i ? "rotate(45deg)" : "rotate(0deg)" }}
+                <svg
+                  className="w-5 h-5 text-[var(--accent)] shrink-0 transition-transform duration-200"
+                  style={{ transform: openIdx === i ? "rotate(180deg)" : "rotate(0deg)" }}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
                 >
-                  +
-                </span>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
               </button>
               <div
                 className="grid transition-all duration-200 ease-in-out"

@@ -8,15 +8,9 @@ export default function Pricing() {
       <div className="absolute bottom-0 right-1/3 w-[300px] h-[300px] rounded-full bg-[#2d1b4e]/15 blur-[100px] pointer-events-none" />
 
       <FadeIn className="relative max-w-3xl mx-auto text-center">
-        <p className="text-sm font-semibold text-[var(--accent)] uppercase tracking-widest mb-3">
-          Investment
-        </p>
-        <h2 className="text-3xl md:text-5xl font-bold mb-6">
-          Simple Pricing
+        <h2 className="text-3xl md:text-4xl font-bold mb-12">
+          Pricing
         </h2>
-        <p className="text-[var(--text-secondary)] mb-12 max-w-xl mx-auto">
-          One plan. Everything included.
-        </p>
 
         <div className="glass-card border-[var(--accent)]/20 rounded-2xl p-8 md:p-12 max-w-md mx-auto">
           <div className="text-sm text-[var(--accent)] font-semibold uppercase tracking-wider mb-6">
@@ -34,7 +28,7 @@ export default function Pricing() {
             {[
               "Unlimited overnight calls answered",
               "SMS dispatch to your driver roster",
-              "Smart escalation chain",
+              "Auto-escalation to backup drivers",
               "Full call recordings & transcripts",
               "Morning summary reports",
               "Dedicated support line",
