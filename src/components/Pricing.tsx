@@ -15,26 +15,19 @@ export default function Pricing() {
           Simple Pricing
         </h2>
         <p className="text-[var(--text-secondary)] mb-12 max-w-xl mx-auto">
-          Less than what you&apos;re paying your call center. Works every night.
-          Never calls in sick.
+          One plan. Everything included.
         </p>
 
         <div className="glass-card border-[var(--accent)]/20 rounded-2xl p-8 md:p-12 max-w-md mx-auto">
-          <div className="text-sm text-[var(--accent)] font-semibold uppercase tracking-wider mb-4">
+          <div className="text-sm text-[var(--accent)] font-semibold uppercase tracking-wider mb-6">
             Night Shift Plan
           </div>
-          <div className="text-sm text-[var(--text-secondary)] mb-1 line-through">
-            $1,200+/mo for a human call center
-          </div>
-          <div className="flex items-baseline justify-center gap-1 mb-1">
+          <div className="flex items-baseline justify-center gap-1 mb-2">
             <span className="text-5xl font-extrabold">$1,000</span>
             <span className="text-[var(--text-secondary)]">/month</span>
           </div>
-          <div className="text-sm text-[var(--accent)] font-medium mb-2">
-            Save $2,400+/year vs. a human answering service
-          </div>
           <div className="text-[var(--text-secondary)] text-sm mb-8">
-            + $300 one-time setup &amp; configuration
+            + $300 one-time setup
           </div>
 
           <ul className="text-left space-y-3 mb-10">
