@@ -1,3 +1,5 @@
+import FadeIn, { StaggerContainer, StaggerItem } from "./FadeIn";
+
 export default function HowItWorks() {
   const steps = [
     {
@@ -23,32 +25,36 @@ export default function HowItWorks() {
       <div className="h-px bg-gradient-to-r from-transparent via-[var(--accent)]/20 to-transparent mb-28" />
 
       <div className="max-w-5xl mx-auto">
-        <p className="text-sm font-semibold text-[var(--accent)] uppercase tracking-widest mb-3 text-center">
-          Process
-        </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">
-          How It Works
-        </h2>
-        <p className="text-[var(--text-secondary)] text-center mb-16 max-w-xl mx-auto">
-          Three steps. Zero missed calls.
-        </p>
+        <FadeIn>
+          <p className="text-sm font-semibold text-[var(--accent)] uppercase tracking-widest mb-3 text-center">
+            Process
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">
+            How It Works
+          </h2>
+          <p className="text-[var(--text-secondary)] text-center mb-16 max-w-xl mx-auto">
+            Three steps. Zero missed calls.
+          </p>
+        </FadeIn>
 
-        <div className="grid md:grid-cols-3 gap-8 relative">
+        <StaggerContainer className="grid md:grid-cols-3 gap-8 relative">
           {/* Connecting line on desktop */}
           <div className="hidden md:block absolute top-8 left-[16.67%] right-[16.67%] h-px border-t border-dashed border-[var(--accent)]/20" />
 
           {steps.map((step) => (
-            <div key={step.num} className="relative text-center md:text-left">
-              <div className="text-7xl font-extrabold text-[var(--accent)]/25 mb-2">
-                {step.num}
+            <StaggerItem key={step.num}>
+              <div className="relative text-center md:text-left">
+                <div className="text-7xl font-extrabold text-[var(--accent)]/25 mb-2">
+                  {step.num}
+                </div>
+                <h3 className="text-xl font-bold mb-3">{step.title}</h3>
+                <p className="text-[var(--text-secondary)] leading-relaxed">
+                  {step.desc}
+                </p>
               </div>
-              <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-              <p className="text-[var(--text-secondary)] leading-relaxed">
-                {step.desc}
-              </p>
-            </div>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
       </div>
     </section>
   );

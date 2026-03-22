@@ -60,7 +60,7 @@ export default function Navbar() {
             href="#contact"
             className="bg-[var(--accent)] text-[var(--bg-primary)] px-5 py-2 rounded-lg font-semibold text-sm hover:bg-[var(--accent-hover)] transition-colors shadow-[0_0_20px_rgba(212,168,67,0.15)]"
           >
-            Schedule a Demo
+            Get in Touch
           </a>
         </div>
 
@@ -97,7 +97,7 @@ export default function Navbar() {
           <a href="#features" onClick={() => setOpen(false)} className="text-[var(--text-secondary)]">Features</a>
           <a href="#pricing" onClick={() => setOpen(false)} className="text-[var(--text-secondary)]">Pricing</a>
           <a href="#faq" onClick={() => setOpen(false)} className="text-[var(--text-secondary)]">FAQ</a>
-          <a href="#contact" onClick={() => setOpen(false)} className="bg-[var(--accent)] text-[var(--bg-primary)] px-5 py-2 rounded-lg font-semibold text-sm text-center">Schedule a Demo</a>
+          <a href="#contact" onClick={() => setOpen(false)} className="bg-[var(--accent)] text-[var(--bg-primary)] px-5 py-2 rounded-lg font-semibold text-sm text-center">Get in Touch</a>
         </div>
       </div>
     </nav>

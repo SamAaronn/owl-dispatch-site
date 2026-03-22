@@ -1,10 +1,13 @@
+import FadeIn from "./FadeIn";
+
 export default function Pricing() {
   return (
     <section id="pricing" className="py-28 px-6 relative overflow-hidden">
       {/* Ambient glow */}
       <div className="absolute -top-40 left-1/4 w-[400px] h-[400px] rounded-full bg-[var(--accent)]/3 blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-0 right-1/3 w-[300px] h-[300px] rounded-full bg-[#2d1b4e]/15 blur-[100px] pointer-events-none" />
 
-      <div className="relative max-w-3xl mx-auto text-center">
+      <FadeIn className="relative max-w-3xl mx-auto text-center">
         <p className="text-sm font-semibold text-[var(--accent)] uppercase tracking-widest mb-3">
           Investment
         </p>
@@ -66,10 +69,10 @@ export default function Pricing() {
             href="#contact"
             className="block w-full bg-[var(--accent)] text-[var(--bg-primary)] py-3.5 rounded-lg font-semibold text-lg hover:bg-[var(--accent-hover)] transition-colors shadow-[0_0_20px_rgba(212,168,67,0.2)]"
           >
-            Schedule a Demo
+            Get in Touch
           </a>
         </div>
-      </div>
+      </FadeIn>
     </section>
   );
 }
