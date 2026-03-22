@@ -2,6 +2,48 @@
 
 All changes to the Owl Dispatch website are logged here with rationale.
 
+## v4 — 2026-03-22 — Scroll Animations & Business Card CTAs
+
+**Driven by:** Sam's feedback — needs movement, color, and business-card framing (no demo scheduling)
+
+### Added
+- Framer Motion scroll-triggered animations on all sections (fade-in-up, staggered card reveals)
+- Hero elements cascade on page load (badge → headline → subtitle → buttons)
+- Aurora-style gradient blurs in hero (deep blue `#1a3a5c` + purple `#2d1b4e` + gold)
+- Color accent blobs behind Features and Pricing sections
+- `FadeIn`, `StaggerContainer`, `StaggerItem` animation components
+- Phone icon next to phone number in CTA section
+- Subtle hover lift on primary CTA buttons (`hover:translate-y-[-1px]`)
+
+### Changed
+- All CTAs changed from "Schedule a Demo" → "Get in Touch" — this is a business card, not a sales funnel
+- Hero primary CTA is now phone number: "Call (540) 645-0805" (direct `tel:` link)
+- CTA section heading: "Stop Losing Overnight Calls" → "Let's Talk"
+- CTA subtitle: removed demo language, replaced with "Curious how AI dispatch could work for your operation?"
+- CTA form: company name no longer required (lowering friction)
+- Form confirmation text simplified: "We'll get back to you within 24 hours"
+- Contact form card upgraded to glass-card effect
+
+## v3 — 2026-03-22 — Premium Visual Polish
+
+**Driven by:** Design research agent studying Linear, Vercel, Stripe, Retell, Cal.com
+
+### Added
+- Grain texture SVG overlay at 3% opacity (biggest single "premium" signal)
+- Glass-card effects (`backdrop-filter: blur(12px) saturate(125%)`) on feature cards, problem section, pricing card
+- Cards lift on hover (`translateY(-2px)` + shadow increase)
+- Custom selection color (amber/gold)
+- `--text-tertiary` and `--accent-glow` CSS variables
+- `--border-hover` variable for interactive states
+
+### Changed
+- Body text color: `#f0f0f5` → `rgba(255,255,255,0.7)` (reduces eye strain, premium convention)
+- Headlines: added `-0.02em` letter-spacing globally, `-0.025em` on h1
+- Headline line-heights tightened: h1 `1.05`, h2 `1.1`
+- Added `text-wrap: balance` on all headings
+- Border variables switched to `rgba(255,255,255,0.08)` for subtlety
+- Removed duplicate font-family from body (now handled by `next/font` variable)
+
 ## v2 — 2026-03-22 — Taste Audit Fixes
 
 **Driven by:** Sam's review + automated design audit

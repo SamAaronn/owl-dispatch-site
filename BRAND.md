@@ -62,9 +62,10 @@ These are the ground truth design decisions. Every change to the site MUST be co
 
 ## CTA Language
 
-- **Primary CTA:** "Schedule a Demo" — used everywhere, consistently
-- **Never use:** "Get Started", "Sign Up", "Free Trial", "Start Now"
-- We are selling a $1,000/month service with real setup costs. The CTA is always a conversation, never a self-serve signup.
+- **Primary CTA:** "Get in Touch" — used everywhere, consistently
+- **Hero CTA:** Phone number as primary action: "Call (540) 645-0805"
+- **Never use:** "Get Started", "Sign Up", "Free Trial", "Start Now", "Schedule a Demo" (we don't have a demo yet)
+- This is a **business card**, not a sales funnel. The CTA is always a conversation, never a self-serve signup or demo booking.
 
 ## Trust Signals
 
