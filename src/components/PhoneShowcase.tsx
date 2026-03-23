@@ -34,7 +34,7 @@ export default function PhoneShowcase() {
       {/* Mobile: static version, no scroll hijacking */}
       <section className="lg:hidden py-16 px-6">
         <div className="max-w-sm mx-auto">
-          <p className="text-sm font-medium text-[var(--accent)] uppercase tracking-wide mb-2 text-center">
+          <p className="text-xs font-semibold text-[var(--accent)] uppercase tracking-[0.2em] mb-2 text-center">
             2:14 AM
           </p>
           <h3 className="text-xl font-bold mb-6 text-center">
@@ -51,18 +51,21 @@ export default function PhoneShowcase() {
       {/* Desktop: full scroll-linked animation */}
       <section ref={sectionRef} className="relative h-[180vh] hidden lg:block">
         <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg-primary)] via-[#0a0f1a] to-[var(--bg-primary)] pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg-primary)] via-[#080812] to-[var(--bg-primary)] pointer-events-none" />
 
-          <div className="relative flex items-center justify-center gap-20 px-6 max-w-6xl mx-auto">
-            <div className="relative w-[300px] text-right">
+          {/* Ambient glow behind phone */}
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-[var(--accent)]/[0.03] blur-[150px] pointer-events-none" />
+
+          <div className="relative flex items-center justify-center gap-24 px-6 max-w-6xl mx-auto">
+            <div className="relative w-[320px] text-right">
               <motion.div
                 style={{ opacity: label1Opacity }}
                 className="absolute inset-0 flex flex-col justify-center text-right"
               >
-                <p className="text-sm font-medium text-[var(--accent)] uppercase tracking-wide mb-2">
+                <p className="text-xs font-semibold text-[var(--accent)] uppercase tracking-[0.2em] mb-3">
                   2:14 AM
                 </p>
-                <h3 className="text-3xl font-bold mb-3">Call answered</h3>
+                <h3 className="text-3xl font-bold mb-4">Call answered</h3>
                 <p className="text-[var(--text-secondary)] text-sm leading-relaxed">
                   Law enforcement calls your dispatch line. Owl Dispatch answers instantly.
                 </p>
@@ -72,10 +75,10 @@ export default function PhoneShowcase() {
                 style={{ opacity: label2Opacity }}
                 className="absolute inset-0 flex flex-col justify-center text-right"
               >
-                <p className="text-sm font-medium text-[var(--accent)] uppercase tracking-wide mb-2">
+                <p className="text-xs font-semibold text-[var(--accent)] uppercase tracking-[0.2em] mb-3">
                   2:15 AM
                 </p>
-                <h3 className="text-3xl font-bold mb-3">Driver notified</h3>
+                <h3 className="text-3xl font-bold mb-4">Driver notified</h3>
                 <p className="text-[var(--text-secondary)] text-sm leading-relaxed">
                   Your on-call driver gets the details via SMS. Confirms with one tap. Done.
                 </p>

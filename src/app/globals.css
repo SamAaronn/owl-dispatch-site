@@ -2,17 +2,18 @@
 
 :root {
   --bg-primary: #0a0a0f;
-  --bg-secondary: #12121a;
-  --bg-card: #1a1a2e;
-  --text-primary: #fafafa;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --text-tertiary: rgba(255, 255, 255, 0.5);
+  --bg-secondary: #0f0f17;
+  --bg-card: #161622;
+  --bg-elevated: #1c1c2e;
+  --text-primary: #f0f0f5;
+  --text-secondary: rgba(240, 240, 245, 0.6);
+  --text-tertiary: rgba(240, 240, 245, 0.35);
   --accent: #d4a843;
   --accent-hover: #e6be5a;
   --accent-dim: #b8922e;
-  --accent-glow: rgba(212, 168, 67, 0.15);
-  --border: rgba(255, 255, 255, 0.08);
-  --border-hover: rgba(255, 255, 255, 0.15);
+  --accent-glow: rgba(212, 168, 67, 0.12);
+  --border: rgba(255, 255, 255, 0.06);
+  --border-hover: rgba(255, 255, 255, 0.12);
 }
 
 body {
@@ -26,23 +27,83 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Headline typography */
-h1, h2, h3 {
-  letter-spacing: -0.02em;
+/* Typography system */
+h1, h2, h3, h4 {
+  letter-spacing: -0.03em;
   text-wrap: balance;
-}
-
-h1 {
-  letter-spacing: -0.025em;
   line-height: 1.05;
 }
 
-h2 {
-  line-height: 1.1;
+h1 {
+  letter-spacing: -0.04em;
+  line-height: 0.95;
 }
 
-/* Selection color */
+h2 {
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+h3 {
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+/* Selection */
 ::selection {
-  background: rgba(212, 168, 67, 0.3);
-  color: #fafafa;
+  background: rgba(212, 168, 67, 0.25);
+  color: #f0f0f5;
+}
+
+/* Tabular figures for numbers */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Ambient glow utility */
+.ambient-glow {
+  position: absolute;
+  border-radius: 9999px;
+  pointer-events: none;
+  filter: blur(120px);
+  opacity: 0.4;
+}
+
+/* Button press feedback */
+.btn-press {
+  transition: all 200ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.btn-press:hover {
+  transform: translateY(-1px);
+}
+
+.btn-press:active {
+  transform: translateY(0px) scale(0.98);
+}
+
+/* Gradient border card */
+.card-glow {
+  position: relative;
+  background: var(--bg-card);
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.card-glow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(212, 168, 67, 0.2),
+    rgba(255, 255, 255, 0.05),
+    rgba(212, 168, 67, 0.1)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }

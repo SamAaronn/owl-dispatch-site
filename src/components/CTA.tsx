@@ -1,26 +1,40 @@
+"use client";
+
+import ScrollReveal from "./ScrollReveal";
+
 export default function CTA() {
   return (
-    <section id="contact" className="py-28 px-6 relative overflow-hidden">
-      <div className="relative max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Call us.
-        </h2>
-        <p className="text-[var(--text-secondary)] mb-10 max-w-lg mx-auto">
-          Taking on new companies in Virginia now.
-        </p>
+    <section id="contact" className="py-32 px-6 relative overflow-hidden">
+      {/* Ambient glow */}
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] rounded-full bg-[var(--accent)]/[0.05] blur-[180px] pointer-events-none" />
 
-        <div className="flex flex-col items-center gap-6">
+      <div className="relative max-w-3xl mx-auto text-center">
+        <ScrollReveal>
+          <p className="text-xs font-semibold text-[var(--accent)] uppercase tracking-[0.2em] mb-6">
+            Get started
+          </p>
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
+            Call us.
+          </h2>
+          <p className="text-[var(--text-secondary)] text-lg mb-14 max-w-md mx-auto font-light">
+            Taking on new companies in Virginia now.
+          </p>
+        </ScrollReveal>
+
+        <ScrollReveal delay={0.2}>
           <a
             href="tel:+15406450805"
-            className="flex items-center gap-3 text-xl font-semibold text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
+            className="btn-press inline-flex items-center gap-4 text-3xl md:text-4xl font-bold text-[var(--accent)] hover:text-[var(--accent-hover)] transition-all group"
           >
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
-            </svg>
-            (540) 645-0805
+            <div className="w-14 h-14 rounded-2xl bg-[var(--accent)]/10 border border-[var(--accent)]/20 flex items-center justify-center group-hover:bg-[var(--accent)]/15 transition-colors">
+              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+              </svg>
+            </div>
+            <span className="tabular-nums">(540) 645-0805</span>
           </a>
-          <span className="text-[var(--text-secondary)] text-sm">Virginia, USA</span>
-        </div>
+          <p className="text-[var(--text-tertiary)] text-sm mt-8">Virginia, USA</p>
+        </ScrollReveal>
       </div>
     </section>
   );

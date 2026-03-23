@@ -7,25 +7,30 @@ These are the ground truth design decisions. Every change to the site MUST be co
 | Token | Hex | Usage |
 |-------|-----|-------|
 | `--bg-primary` | `#0a0a0f` | Page background, inputs |
-| `--bg-secondary` | `#12121a` | Alternating section backgrounds |
-| `--bg-card` | `#1a1a2e` | Cards, elevated surfaces |
+| `--bg-secondary` | `#0f0f17` | Alternating section backgrounds |
+| `--bg-card` | `#161622` | Cards, elevated surfaces |
+| `--bg-elevated` | `#1c1c2e` | Higher elevation surfaces |
 | `--text-primary` | `#f0f0f5` | Headlines, body text |
-| `--text-secondary` | `#a0a0b5` | Subtitles, descriptions, muted text |
+| `--text-secondary` | `rgba(240,240,245,0.6)` | Subtitles, descriptions, muted text |
+| `--text-tertiary` | `rgba(240,240,245,0.35)` | Minimal contrast, captions |
 | `--accent` | `#d4a843` | CTAs, highlights, brand gold |
 | `--accent-hover` | `#e6be5a` | Hover state for accent |
 | `--accent-dim` | `#b8922e` | Subtle accent usage |
-| `--border` | `#2a2a3e` | Card borders, dividers |
+| `--accent-glow` | `rgba(212,168,67,0.12)` | Semi-transparent glow |
+| `--border` | `rgba(255,255,255,0.06)` | Card borders, dividers |
+| `--border-hover` | `rgba(255,255,255,0.12)` | Interactive border states |
 
 **Rule:** Never introduce new colors without adding them here first.
 
 ## Typography
 
-- **Font:** Inter (loaded via `next/font/google`)
-- **Hero headline:** `text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight`
-- **Section headlines:** `text-3xl md:text-4xl font-bold` (pricing can go to `md:text-5xl`)
-- **Eyebrow labels:** `text-sm font-semibold text-[var(--accent)] uppercase tracking-widest`
-- **Body text:** `text-sm` or `text-base` with `leading-relaxed`
-- **Subtitles:** `text-lg md:text-xl text-[var(--text-secondary)]`
+- **Font:** Outfit (loaded via `next/font/google`) — geometric sans-serif with character
+- **Hero headline:** `text-5xl md:text-7xl lg:text-8xl font-extrabold` with tight letter-spacing
+- **Section headlines:** `text-3xl md:text-5xl font-bold`
+- **Eyebrow labels:** `text-xs font-semibold text-[var(--accent)] uppercase tracking-[0.2em]`
+- **Body text:** `text-sm` or `text-base` with `leading-relaxed`, weight 400
+- **Subtitles:** `text-lg md:text-xl text-[var(--text-secondary)]` weight 400
+- **Data/numbers:** `font-variant-numeric: tabular-nums`
 
 ## Logo
 
