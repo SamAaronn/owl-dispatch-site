@@ -4,7 +4,7 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function Problem() {
   return (
-    <section className="py-32 px-6 relative overflow-hidden">
+    <section className="py-20 px-6 relative overflow-hidden">
       <div className="relative max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: dramatic stat */}

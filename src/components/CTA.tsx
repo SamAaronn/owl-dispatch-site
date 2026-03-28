@@ -4,7 +4,7 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function CTA() {
   return (
-    <section id="contact" className="py-32 px-6 relative overflow-hidden">
+    <section id="contact" className="py-20 px-6 relative overflow-hidden">
       {/* Ambient glow */}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] rounded-full bg-[var(--accent)]/[0.05] blur-[180px] pointer-events-none" />
 

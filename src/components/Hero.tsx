@@ -94,7 +94,7 @@ export default function Hero() {
             style={{ perspective: 1000 }}
           >
             <div className="absolute -inset-20 bg-[var(--accent)]/[0.04] blur-[100px] rounded-full pointer-events-none" />
-            <div className="relative scale-[0.9] md:scale-100">
+            <div className="relative scale-100 md:scale-110 lg:scale-[1.15]">
               <PhoneMockup callOpacity={staticZero} smsOpacity={staticOne} />
             </div>
           </motion.div>

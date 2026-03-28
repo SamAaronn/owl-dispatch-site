@@ -5,7 +5,7 @@ import SpotlightCard from "./SpotlightCard";
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-28 px-6 relative overflow-hidden">
+    <section id="pricing" className="py-20 px-6 relative overflow-hidden">
       {/* Ambient glow */}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-[var(--accent)]/[0.04] blur-[180px] pointer-events-none" />
 

@@ -4,7 +4,7 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-28 px-6 relative overflow-hidden bg-[var(--bg-secondary)]">
+    <section id="how-it-works" className="py-20 px-6 relative overflow-hidden bg-[var(--bg-secondary)]">
       {/* Dot grid */}
       <div
         className="absolute inset-0"
@@ -20,7 +20,7 @@ export default function HowItWorks() {
             <span className="w-8 h-px bg-[var(--accent)]" />
             How it works
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold mb-20 max-w-lg">
+          <h2 className="text-3xl md:text-5xl font-bold mb-14 max-w-lg">
             Three steps to never missing a call again.
           </h2>
         </ScrollReveal>

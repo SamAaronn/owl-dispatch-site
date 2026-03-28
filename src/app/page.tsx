@@ -6,6 +6,7 @@ import Features from "@/components/Features";
 import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
+import SocialProof from "@/components/SocialProof";
 import Footer from "@/components/Footer";
 import GrainOverlay from "@/components/GrainOverlay";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Problem />
       <HowItWorks />
       <Features />
+      <SocialProof />
       <Pricing />
       <FAQ />
       <CTA />

@@ -34,7 +34,7 @@ export default function FAQ() {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="py-28 px-6 bg-[var(--bg-secondary)] relative overflow-hidden">
+    <section id="faq" className="py-20 px-6 bg-[var(--bg-secondary)] relative overflow-hidden">
       <div className="max-w-3xl mx-auto">
         <ScrollReveal>
           <div className="mb-16 text-center">

@@ -5,7 +5,7 @@ import SpotlightCard from "./SpotlightCard";
 
 export default function Features() {
   return (
-    <section id="features" className="py-28 px-6 relative overflow-hidden">
+    <section id="features" className="py-20 px-6 relative overflow-hidden">
       <div className="relative max-w-6xl mx-auto">
         <ScrollReveal>
           <p className="text-xs font-semibold text-[var(--accent)] uppercase tracking-[0.25em] mb-4 flex items-center gap-3">
